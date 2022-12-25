@@ -1,4 +1,4 @@
-1# Напишите программу, которая принимает на вход цифру,
+# 1. Напишите программу, которая принимает на вход цифру,
 # обозначающую день недели, и проверяет, является ли этот день выходным
 
 print("Enter the day of the week from 1 to 7: ")
@@ -11,4 +11,3 @@ elif day_week > 7:
     print("You entered the wrong number. There are only 7 days in a week. Enter the day of the week from 1 to 7")
 elif day_week == str:
     print("There are only 7 days in a week. Enter the day of the week from 1 to 7")
-
