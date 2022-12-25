@@ -1,8 +1,8 @@
 # Без работы с методами строк.
 # in -> out
 # - 6782 -> 23
-# - 0.67 -> 13
-# - 198.45 -> 27
+# - 0.56 -> 11
+
 
 number = float(input('Введите вещественное число: '))
 num = len(str(number))
@@ -12,5 +12,4 @@ for i in str(number):
     if i != ".":
         sum_num += int(i)
 
-print(number)
-print(sum_num)
+print(number, ' -> ', sum_num)
