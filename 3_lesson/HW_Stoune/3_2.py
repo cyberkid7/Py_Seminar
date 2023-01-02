@@ -15,10 +15,13 @@ def find_list(number):
 
 def twin_multi(spisok):
     kol = len(spisok)
+    new_list = []
     for i in range(0, int(kol/2)):
-        print(spisok[i], ',', spisok[kol-i-1], '=>', spisok[i] * spisok[kol-i-1])
+        new_list.append(spisok[i] * spisok[kol-i-1])
+
     if kol % 2 == 1:
-        print(spisok[(kol // 2)])
+        new_list.append(spisok[(kol // 2)]**2)
+        print(new_list)
 
 
 number = int(input('Введите целое число: '))
