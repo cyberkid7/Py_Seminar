@@ -3,7 +3,6 @@
 
 from random import randint
 
-# number = int(input('Введите целое число: '))
 
 def find_list(number):
     list_num = []

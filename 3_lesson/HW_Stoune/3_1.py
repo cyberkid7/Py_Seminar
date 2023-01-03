@@ -9,9 +9,6 @@ def find_sum(num):
         spisok.append(randint(1, 100))
 
     sum_num = 0
-    # for i in spisok(0, num, 2):
-    #     sum_num = sum_num + i
-    # print(spisok, '\n', sum_num)
     for i in spisok:
         if spisok.index(i) % 2 != 0:
             sum_num = sum_num + i
