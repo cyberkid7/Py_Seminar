@@ -4,14 +4,32 @@
 
 from random import sample
 
-def words_list(num, word='abc'):
-    w_list = []
-    for i in range(num):
-        m = sample(word, k=3)
-        w_list.append("".join(m))
-    return w_list
+def find_num(count, num):
+    if count < 0:
+        return "Negative value of the number of numbers!"
+    # sample - неповторяющиеся значения
+    list_nums = sample(range(1, (count + 1) * 2), k=count)
+    print(list_nums)
 
-n = int(input('Введите число: '))
+    if num in list_nums:
+        return f"The number - {num} is present in the list."
+    return f"The number - {num} is not in the list."
 
-u = words_list(n)
-print(u)
+
+print(find_num(int(input("Number of numbers: ")), int(input("Number: "))))
+
+# -------------------------- вариант
+
+from random import sample
+
+
+def find_num(count, num):
+    if count < 0:
+        return "Negative value of the number of numbers!"
+
+    list_nums = sample(range(1, (count + 1) * 2), k=count)
+    print(list_nums)
+    return "Yes" if num in list_nums else "No"
+
+
+print(find_num(int(input("Number of numbers: ")), int(input("Number: "))))
